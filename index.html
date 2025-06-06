@@ -5,99 +5,123 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Anushka Ramrakhya | Portfolio</title>
   <link rel="stylesheet" href="style.css"/>
+  <style>
+    html {
+      scroll-behavior: smooth;
+    }
+  </style>
+     <link rel="icon" href="images/favicon.ico" type="image/x-icon" />
+     <meta name="description" content="Portfolio of Anushka Ramrakhya, Full Stack Developer" />
+     <meta name="author" content="Anushka Ramrakhya" />
+     
 </head>
-<body>
-        <nav>
-    <ul>
-        <li><a href="#about">About</a></li>
-        <li><a href="#skills">Skills</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#contact">Contact</a></li>
-        <li><a href="myResume.pdf" download>Resume</a></li>
-    </ul>
-    </nav>
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.12.2/dist/gsap.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.12.2/dist/ScrollTrigger.min.js"></script>
 
-  <!-- Profile Section -->
-  <div class="profile">
-    <img src="images/photo.jpg">
+<body>
+
+  <section class="profile">
+    <img src="images/photo.jpg" alt="Profile photo">
     <h2>Anushka Narayan Ramrakhya</h2>
     <p>Full-Stack Developer</p>
-  </div>
+  </section>
 
-  <!-- About Me Section -->
-  <div class="section about">
+  <section class="section about" id="about">
     <h3>About Me</h3>
     <p>
       I am a passionate full-stack developer with a keen interest in creating dynamic and responsive web applications.
       My journey in web development has equipped me with a diverse skill set, enabling me to tackle both front-end and back-end challenges effectively.
-      I thrive on learning new technologies and continuously improving my craft.
     </p>
-  </div>
+  </section>
 
-  <!-- Skills Section -->
-  <div class="section skills">
+  <section class="section skills">
     <h3>Skills</h3>
     <ul>
-      <li>JavaScript</li>
-      <li>HTML & CSS</li>
-      <li>C / C++</li>
-      <li>React</li>
-      <li>Tailwind CSS</li>
-      <li>Redux Toolkit</li>
-      <li>Node.js</li>
-      <li>Express.js</li>
-      <li>MongoDB</li>
-      <li>Firebase</li>
-      <li>JWT (Authentication)</li>
-      <li>Render</li>
-      <li>Vercel</li>
-      <li>Postman</li>
-      <li>API Integration</li>
-      <li>Vue.js</li>
+      <li>JavaScript</li><li>HTML & CSS</li><li>C / C++</li><li>React</li><li>Tailwind CSS</li><li>Redux Toolkit</li>
+      <li>Node.js</li><li>Express.js</li><li>MongoDB</li><li>Firebase</li><li>JWT (Authentication)</li>
+      <li>Render</li><li>Vercel</li><li>Postman</li><li>API Integration</li><li>Vue.js</li>
     </ul>
-    <div class="section projects">
-  <h3>Projects</h3>
-
-  <div class="project">
-    <h4>InspireSpace – Charging Station App</h4>
-    <p>
-      A full-stack app to manage EV charging stations. Admins can onboard new chargers, while users can view, book, and navigate to chargers using an OpenStreetMap integration.
-      Built with Node.js, Express.js, MongoDB, Vue.js, JWT Auth, and hosted on Vercel + Render.
-    </p>
-    <p>
-      🔗 <a href="https://charging-station-management-hs2k-eight.vercel.app/chargers" target="_blank">Live Demo</a>
-    </p>
-  </div>
-
-    <div class="project">
-        <h4>Food Delivery App</h4>
-        <p>
-        A responsive web app for browsing restaurants, placing orders, and tracking delivery status. Includes authentication, real-time cart updates, and a sleek UI using React, Redux, and Firebase.
-        </p>
+  </section>
+  <section class="section projects" id="projects">
+    <h3>Projects</h3>
+    
+    <div class="project-card">
+      <h4>InspireSpace – Charging Station App</h4>
+      <p>A full-stack app to manage EV charging stations using Node.js, Express.js, MongoDB, and Vue.js.</p>
+      <p>It allows admins to add, update, and delete charging points with map-based UI and provides real-time status updates of charger availability. The project includes role-based access control and integrates geolocation for optimal station visibility.</p>
+      <p><a href="https://charging-station-management-hs2k-eight.vercel.app/chargers" target="_blank">Live Demo</a></p>
     </div>
+    
+    <div class="project-card">
+      <h4>Food Delivery App</h4>
+      <p>A responsive food ordering app with real-time updates using React, Redux, and Firebase.</p>
+      <p>Features include user authentication, live order tracking, restaurant listing, cart management, and Firestore database integration for storing order history and user profiles. UI is mobile-optimized and includes smooth animations.</p>
+    </div>
+    
+    <div class="project-card">
+      <h4>E-commerce Platform</h4>
+      <p>An online store with cart, payment, and dashboard built using React, Tailwind CSS, and Stripe API.</p>
+      <p>This app supports dynamic product pages, search and filter functionality, secure payment gateway integration, and an admin dashboard to manage inventory and orders. Emphasis is placed on performance and clean UI design.</p>
+    </div>
+  </section>
+  
+  </section>
 
-    <div class="project">
-        <h4>E-commerce Platform</h4>
-        <p>
-        A complete online shopping platform with product management, cart functionality, payment integration, and user dashboard. Developed with React, Tailwind CSS, and Stripe API.
-        </p>
-    </div>
+  <section class="section contact" id="contact">
+    <h3>Contact</h3>
+    <p>Email: <a href="mailto:anushkaramrakhyaa@gmail.com">anushkaramrakhyaa@gmail.com</a></p>
+    <p>Phone: <a href="tel:+919922262337">+91 9922262337</a></p>
+    <p>LinkedIn: <a href="https://www.linkedin.com/in/anushka-ramrakhya-58734b363" target="_blank">Profile</a></p>
+    <p>GitHub: <a href="https://github.com/anushka-5" target="_blank">@anushka-5</a></p>
+  </section>
 
-    <div class="resume-links" style="margin-top: 2rem;">
-        <p>📄 <a href="myResume.pdf" download>Download My Resume</a></p>
-        <p>💻 <a href="https://github.com/anushka-5" target="_blank">Visit My GitHub</a></p>
-        <div class="section contact">
-        <h3>Contact</h3>
-        <p>📧 <a href="mailto:anushkaramrakhyaa@gmail.com">anushkaramrakhyaa@gmail.com</a></p>
-        <p>📞 <a href="tel:+919922262337">+91 9922262337</a></p>
-        <p>💼 <a href="https://www.linkedin.com/in/anushka-ramrakhya-58734b363?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app" target="_blank">LinkedIn</a></p>
-        <p>💻 <a href="https://github.com/anushka-5" target="_blank">GitHub</a></p>
-        </div>
-    </div>
-    </div>
-  </div>
-        <footer>
+  <footer>
     <p>&copy; 2025 Anushka Ramrakhya. All rights reserved.</p>
-    </footer>
+  </footer>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/ScrollTrigger.min.js"></script>
+  <script>
+    gsap.registerPlugin(ScrollTrigger);
+    gsap.from(".project-card", {
+      scrollTrigger: {
+        trigger: ".project-card",
+        start: "top 90%",
+        toggleActions: "play none none none"
+      },
+      y: 50,
+      opacity: 0,
+      duration: 1,
+      stagger: 0.2
+    });
+  </script>
+  <script>
+    gsap.registerPlugin(ScrollTrigger);
+  
+    gsap.from(".profile", {
+      opacity: 0,
+      y: 50,
+      duration: 1,
+      delay: 0.3
+    });
+  
+    gsap.from(".section", {
+      scrollTrigger: ".section",
+      opacity: 0,
+      y: 50,
+      duration: 1,
+      stagger: 0.2,
+      ease: "power2.out"
+    });
+  
+    gsap.from(".project-card", {
+      scrollTrigger: ".projects",
+      opacity: 0,
+      y: 30,
+      duration: 0.6,
+      stagger: 0.3
+    });
+  </script>
+  
 </body>
 </html>

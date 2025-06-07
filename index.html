@@ -10,14 +10,10 @@
       scroll-behavior: smooth;
     }
   </style>
-     <link rel="icon" href="images/favicon.ico" type="image/x-icon" />
-     <meta name="description" content="Portfolio of Anushka Ramrakhya, Full Stack Developer" />
-     <meta name="author" content="Anushka Ramrakhya" />
-     
+  <link rel="icon" href="images/favicon.ico" type="image/x-icon" />
+  <meta name="description" content="Portfolio of Anushka Ramrakhya, Full Stack Developer" />
+  <meta name="author" content="Anushka Ramrakhya" />
 </head>
-<script src="https://cdn.jsdelivr.net/npm/gsap@3.12.2/dist/gsap.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/gsap@3.12.2/dist/ScrollTrigger.min.js"></script>
-
 <body>
 
   <section class="profile">
@@ -37,41 +33,43 @@
   <section class="section skills">
     <h3>Skills</h3>
     <ul>
-      <li>JavaScript</li><li>HTML & CSS</li><li>C / C++</li><li>React</li><li>Tailwind CSS</li><li>Redux Toolkit</li>
-      <li>Node.js</li><li>Express.js</li><li>MongoDB</li><li>Firebase</li><li>JWT (Authentication)</li>
-      <li>Render</li><li>Vercel</li><li>Postman</li><li>API Integration</li><li>Vue.js</li>
+      <li>JavaScript</li><li>React</li><li>Vue.js</li><li>Node.js</li><li>Express.js</li><li>MongoDB</li>
+      <li>Firebase</li><li>JWT</li><li>Tailwind CSS</li><li>API Integration</li><li>Postman</li>
     </ul>
   </section>
+
   <section class="section projects" id="projects">
     <h3>Projects</h3>
     
     <div class="project-card">
-      <h4>InspireSpace – Charging Station App</h4>
+      <img src="https://images.unsplash.com/photo-1587400873582-230980eb46eb?w=400&auto=format&fit=crop&q=60" alt="Charging Station App">
+      <h4>EV – Charging Station App</h4>
       <p>A full-stack app to manage EV charging stations using Node.js, Express.js, MongoDB, and Vue.js.</p>
       <p>It allows admins to add, update, and delete charging points with map-based UI and provides real-time status updates of charger availability. The project includes role-based access control and integrates geolocation for optimal station visibility.</p>
-      <p><a href="https://charging-station-management-hs2k-eight.vercel.app/chargers" target="_blank">Live Demo</a></p>
+      <a href="https://charging-station-management-hs2k-eight.vercel.app/chargers" target="_blank" class="project-btn">Live Demo</a>
     </div>
     
     <div class="project-card">
+      <img src="https://media.istockphoto.com/id/1287186696/photo/food-delivery-app-order-with-phone-online-mobile-service-for-take-away-burger-and-pizza.webp?a=1&b=1&s=612x612&w=0&k=20&c=LZ7ocATIKddKMFYlXT5cwGeYoZ-k9WawC0ZxAvth7MI=" alt="Food Delivery App">
       <h4>Food Delivery App</h4>
       <p>A responsive food ordering app with real-time updates using React, Redux, and Firebase.</p>
       <p>Features include user authentication, live order tracking, restaurant listing, cart management, and Firestore database integration for storing order history and user profiles. UI is mobile-optimized and includes smooth animations.</p>
     </div>
     
     <div class="project-card">
-      <h4>E-commerce Platform</h4>
-      <p>An online store with cart, payment, and dashboard built using React, Tailwind CSS, and Stripe API.</p>
-      <p>This app supports dynamic product pages, search and filter functionality, secure payment gateway integration, and an admin dashboard to manage inventory and orders. Emphasis is placed on performance and clean UI design.</p>
+      <img src="https://images.unsplash.com/photo-1606744824163-985d376605aa?w=400&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTN8fGludGVyaW9yJTIwZGVzaWdufGVufDB8fDB8fHww" alt="Interior Design App">
+      <h4>InspireSpace - Interior Design App</h4>
+      <p>Built a full-stack application to manage interior design products like wallpapers, carpets, and domes with distinct roles for admin and customers.</p>
+      <p>Implemented secure JWT-based authentication with role-based access control using Node.js, Express, and MySQL. Integrated Prisma ORM to handle relational data and developed RESTful APIs for products, users, and orders. The frontend is built with React and TailwindCSS, using a custom pastel palette for a clean, responsive UI.</p>
     </div>
   </section>
-  
-  </section>
+
   <section class="section resume" id="resume">
     <h3>Resume</h3>
     <p>Download my resume to explore my professional experience and skills.</p>
-    <a href="myResume.pdf" target="_blank" class="resume-btn">Download Resume</a>
+    <a href="Anushka_Ramrakhya_Resume.pdf" target="_blank" class="resume-btn">Download Resume</a>
   </section>
- 
+
   <section class="section contact" id="contact">
     <h3>Contact Me</h3>
     <p>Let's connect! Feel free to reach out using the links below.</p>
@@ -83,55 +81,10 @@
       <a href="https://github.com/anushka-5" target="_blank" class="contact-btn">GitHub</a>
     </div>
   </section>
-  
 
   <footer>
     <p>&copy; 2025 Anushka Ramrakhya. All rights reserved.</p>
   </footer>
 
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/ScrollTrigger.min.js"></script>
-  <script>
-    gsap.registerPlugin(ScrollTrigger);
-    gsap.from(".project-card", {
-      scrollTrigger: {
-        trigger: ".project-card",
-        start: "top 90%",
-        toggleActions: "play none none none"
-      },
-      y: 50,
-      opacity: 0,
-      duration: 1,
-      stagger: 0.2
-    });
-  </script>
-  <script>
-    gsap.registerPlugin(ScrollTrigger);
-  
-    gsap.from(".profile", {
-      opacity: 0,
-      y: 50,
-      duration: 1,
-      delay: 0.3
-    });
-  
-    gsap.from(".section", {
-      scrollTrigger: ".section",
-      opacity: 0,
-      y: 50,
-      duration: 1,
-      stagger: 0.2,
-      ease: "power2.out"
-    });
-  
-    gsap.from(".project-card", {
-      scrollTrigger: ".projects",
-      opacity: 0,
-      y: 30,
-      duration: 0.6,
-      stagger: 0.3
-    });
-  </script>
-  
 </body>
 </html>
